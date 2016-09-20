@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends ProgrammingClass {
+    //All properties are private and accessible with getters and setters
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -19,7 +20,8 @@ public class AdvancedJavaCourse extends ProgrammingClass {
         this.setCourseNumber(courseNumber);
         this.setPrerequisites(prerequisites);
     }
-
+    //getters & setters and other methods are final. This is a base concrete class
+    //so it helps to guard against open/close issues
     public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }

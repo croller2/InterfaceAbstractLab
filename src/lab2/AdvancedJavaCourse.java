@@ -18,7 +18,8 @@ public class AdvancedJavaCourse implements ProgrammingClass {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
-
+    //getters & setters and other methods are final. This is a base concrete class
+    //so it helps to guard against open/close issues
     public String getCourseNumber() {
         return courseNumber;
     }

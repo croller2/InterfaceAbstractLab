@@ -7,7 +7,8 @@ package lab2;
  * @version     1.00
  */
 public class IntroJavaCourse implements ProgrammingClass {
-    String courseName;
+    //All properties are private and accessible with getters and setters
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -16,7 +17,9 @@ public class IntroJavaCourse implements ProgrammingClass {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }
-
+    
+    //getters & setters and other methods are final. This is a base concrete class
+    //so it helps to guard against open/close issues
     public final String getCourseNumber() {
         return courseNumber;
     }

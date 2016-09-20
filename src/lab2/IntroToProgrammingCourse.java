@@ -9,15 +9,21 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroToProgrammingCourse implements ProgrammingClass {
+    
+    //All properties are private and accessible with getters and setters
     private String courseName;
     private String courseNumber;
     private double credits;
 
+    
+    //Constructor is public and open
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
     
+    //getters & setters and other methods are final. This is a base concrete class
+    //so it helps to guard against open/close issues
     @Override
     public final String getCourseNumber() {
         return courseNumber;
