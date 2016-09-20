@@ -8,13 +8,13 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse implements ProgrammingClass {
+public class IntroToProgrammingCourse implements ProgrammingCourse {
     
     //All properties are private and accessible with getters and setters
     private String courseName;
     private String courseNumber;
     private double credits;
-
+    private String prerequisites;
     
     //Constructor is public and open
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
@@ -74,6 +74,14 @@ public class IntroToProgrammingCourse implements ProgrammingClass {
         System.out.println("Get your Raspberry PI");
         System.out.println("Format Your SD Card");
         System.out.println("Do things with it");
+    }
+
+    public final String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public final void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
     }
     
 }

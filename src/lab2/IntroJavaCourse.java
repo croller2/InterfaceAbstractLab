@@ -6,7 +6,7 @@ package lab2;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse implements ProgrammingClass {
+public class IntroJavaCourse implements ProgrammingCourse {
     //All properties are private and accessible with getters and setters
     private String courseName;
     private String courseNumber;

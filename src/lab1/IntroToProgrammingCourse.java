@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends ProgrammingClass {
+public class IntroToProgrammingCourse extends ProgrammingCourse {
     //All properties are private and accessible with getters and setters
     private String courseName;
     private String courseNumber;

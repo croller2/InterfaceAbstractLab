@@ -9,7 +9,19 @@ package lab1;
  *
  * @author chris
  */
-public abstract class ProgrammingClass implements WCTCClass {
+public abstract class ProgrammingCourse{
+
+    public abstract String getCourseName();
+
+    public abstract void setCourseName(String courseName);
+
+    public abstract String getCourseNumber();
+
+    public abstract void setCourseNumber(String courseNumber);
+
+    public abstract double getCredits();
+
+    public abstract void setCredits(double credits);
     
     public abstract void setPrerequisites(String prerequisites);
     

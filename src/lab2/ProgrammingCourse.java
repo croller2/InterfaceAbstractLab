@@ -9,8 +9,8 @@ package lab2;
  *
  * @author chris
  */
-public interface ProgrammingClass {
-        
+public interface ProgrammingCourse {
+
     public String getCourseNumber();
 
     public void setCourseNumber(String courseNumber);
@@ -22,4 +22,8 @@ public interface ProgrammingClass {
     public String getCourseName();
 
     public void setCourseName(String courseName);
+    
+    public void setPrerequisites(String prerequisites);
+    
+    public String getPrerequisites();
 }

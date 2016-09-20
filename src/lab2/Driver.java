@@ -13,14 +13,14 @@ package lab2;
 public class Driver {
     public static void main(String[] args) {
            //All utilize Substitution, we can do whatever we want because they're all base class
-        ProgrammingClass AdvJava = new AdvancedJavaCourse("Advanced Java" , "182-678");
-        ProgrammingClass IntroJava = new IntroJavaCourse("Introduction to Java Programming" , "182-789");
-        ProgrammingClass IntroProg = new IntroToProgrammingCourse("Introduction to Programming" , "180-456");
+        ProgrammingCourse AdvJava = new AdvancedJavaCourse("Advanced Java" , "182-678");
+        ProgrammingCourse IntroJava = new IntroJavaCourse("Introduction to Java Programming" , "182-789");
+        ProgrammingCourse IntroProg = new IntroToProgrammingCourse("Introduction to Programming" , "180-456");
     
         //You can add all of them to an array iterate through because they are based off ProgrammingClass super class
-        ProgrammingClass[] classList = {AdvJava, IntroJava, IntroProg};
+        ProgrammingCourse[] classList = {AdvJava, IntroJava, IntroProg};
     
-        for(ProgrammingClass pc : classList){
+        for(ProgrammingCourse pc : classList){
             System.out.println("Course Name: " + pc.getCourseName() );
         }
         
