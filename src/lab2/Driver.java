@@ -22,7 +22,14 @@ public class Driver {
     
         for(ProgrammingClass pc : classList){
             System.out.println("Course Name: " + pc.getCourseName() );
-    }
+        }
+        
+        //If you want to instantiate something as a child class:
+        IntroToProgrammingCourse IntroProgTwo = new IntroToProgrammingCourse("Introduction to Programming","180-455");
+        //You can if you're not going to use it in any way that would be incompatible with other classes. 
+        //It's easier to type it as super class though allowing for versatility and reusability
+        IntroProgTwo.goToClass();
+        
     }
  
 }

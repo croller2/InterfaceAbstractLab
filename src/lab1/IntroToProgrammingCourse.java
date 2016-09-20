@@ -72,6 +72,13 @@ public class IntroToProgrammingCourse extends ProgrammingClass {
     public String majorLearningObjective() {
         return("You get to learn about procedural programming!");
     }
+    
+        public final void goToClass(){
+        //Below are stateements for doing something
+        System.out.println("Get your Raspberry PI");
+        System.out.println("Format Your SD Card");
+        System.out.println("Do things with it");
+    }
 
     
 }
