@@ -49,27 +49,26 @@ public class AdvancedJavaCourse extends ProgrammingClass {
             this.credits = credits;
         }
     }
-
+    @Override
     public final String getCourseName() {
         return courseName;
     }
-
+    @Override
     public final void setCourseName(String courseName) {
         this.courseName = courseName;
     }
-
+    @Override
     public final String getCourseNumber() {
         return courseNumber;
     }
-
+    @Override
     public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-
     public final void setCredits() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    @Override
     public final double getCredits() {
         return this.credits;
     }

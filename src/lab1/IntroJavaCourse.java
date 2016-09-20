@@ -21,27 +21,28 @@ public class IntroJavaCourse extends ProgrammingClass {
     
     //getters & setters and other methods are final. This is a base concrete class
     //so it helps to guard against open/close issues
+    @Override
     public final String getCourseNumber() {
         return courseNumber;
     }
-
+    @Override
     public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-
+    @Override
     public final double getCredits() {
         return credits;
     }
 
-
+    @Override
     public final String getPrerequisites() {
         return prerequisites;
     }
-
+    @Override
     public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
-
+    @Override
     public final void setCredits(double credits) {
         if(credits < 0 || credits > 5.0) {
             System.out.println(
@@ -51,11 +52,11 @@ public class IntroJavaCourse extends ProgrammingClass {
             this.credits = credits;
         }
     }
-
+    @Override
     public final String getCourseName() {
         return courseName;
     }
-
+    @Override
     public final void setCourseName(String courseName) {
         this.courseName = courseName;
     }
